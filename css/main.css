@@ -27,9 +27,11 @@ body {
 
 .main-header {
 	font-size: 3rem;
+  margin-bottom: 5px;
 }
 
 a {
+  line-height: 1;
 	color: #e74c3c;
 	text-decoration: none;
 }
@@ -53,3 +55,17 @@ a:hover {
   background: rgba(0,0,0,0.35);
 }
 
+body {
+  margin: 0 auto;
+  width: 100%;
+}
+
+ul {
+  border: 0 solid silver;
+  border-width: 0 0 1px 1px;
+}
+li {
+  border: 0 solid silver;
+  border-width: 1px 1px 0 0;
+  padding:.5em;
+}

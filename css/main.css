@@ -69,3 +69,59 @@ li {
   border-width: 1px 1px 0 0;
   padding:.5em;
 }
+
+li.active {
+  background-color: black
+}
+
+.pagination.center,
+.pagination.center ul {
+  float: left;
+  position: relative;
+}
+.pagination.center { left: 35%; }
+.pagination.center ul { left: -35%; }
+
+.news-header {
+  font-size: 2rem;
+  border-left: 4px solid #e74c3c;
+  padding-left: 2px;
+}
+
+.news-body {
+ font-size: 1.2rem;
+}
+
+.player {
+  width: 100%; 
+  border:none; 
+  overflow:hidden;  
+}
+
+.avatar {
+}
+
+.comment-item {
+  padding: 2px;
+  border: solid 1px;
+}
+
+.comment-item-section {
+  border: solid 1px gray;
+  padding: 2px;
+}
+
+.reader {
+  width: 100%; 
+  border: none; 
+  overflow: hidden; 
+  background-color: white;
+}
+
+.embed-responsive-reader {
+  padding-bottom: 175%;
+}
+
+.table-poster {
+  width: 100%;
+}

@@ -24,7 +24,7 @@
   <body>
   <div id="app">
     <b-container fluid>
-      <b-navbar toggleable="md" type="dark" variant="info">
+      <b-navbar toggleable="lg" type="dark" variant="info">
         <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
         <b-navbar-brand href="#">
           <b-img src="img/logo_1.png" alt="Risens Team">
@@ -39,16 +39,15 @@
           </b-navbar-nav>
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
-            <b-nav-item class="button-menu btn btn-secondary" onclick="setNight()">
-              <i class="fa fa-moon-o" aria-hidden="true"></i>
+            <b-nav-item class="button-menu btn btn-secondary text-xs-center">
+                <i class="fa fa-moon-o" aria-hidden="true"></i>
             </b-nav-item>
             <b-nav-item>
               <b-nav-form>
-                <b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Поиск" />
-                <b-button size="sm" class="my-2 my-sm-0" type="submit">Поиск</b-button>
+                <b-form-input size="sm" class="mr-sm-2 w-100" type="text" placeholder="Поиск" />
               </b-nav-form>
             </b-nav-item>
-            <b-nav-item-dropdown right>
+            <b-dropdown right toggle-class="button-menu">
               <!-- Using button-content slot -->
               <template slot="button-content">
                 <i class="fa fa-sign-in"></i>
@@ -60,7 +59,7 @@
               <b-dropdown-item href="#">Непрочитанное</b-dropdown-item>
               <b-dropdown-item href="#">Последние комментарии</b-dropdown-item>
               <b-dropdown-item href="#">Выход</b-dropdown-item>
-            </b-nav-item-dropdown>
+            </b-dropdown>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -84,7 +83,7 @@
           <b-card-group deck class="justify-content-center">
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -101,7 +100,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -118,7 +117,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -135,7 +134,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -152,7 +151,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -176,7 +175,7 @@
           <b-card-group deck class="justify-content-center">
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -193,7 +192,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -210,7 +209,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -227,7 +226,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -244,7 +243,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -268,7 +267,7 @@
           <b-card-group deck class="justify-content-center">
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -285,7 +284,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -302,7 +301,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -319,7 +318,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -336,7 +335,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -360,7 +359,7 @@
           <b-card-group deck class="justify-content-center">
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -377,7 +376,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -394,7 +393,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -411,7 +410,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -428,7 +427,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -445,7 +444,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -462,7 +461,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -479,7 +478,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -496,7 +495,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -513,7 +512,7 @@
             </b-card>
             <b-card
                     footer="Добавлена 12 серия с русской озвучкой и субтитрами"
-                    style="min-width:20rem;; max-width:20rem;"
+                    style="min-width:15rem;; max-width:25rem;"
                     no-body
                     class="mb-2">
               <b-link to="#">
@@ -530,7 +529,7 @@
             </b-card>
           </b-card-group>
         </b-col>
-        <b-col class="px-1" md="2" order="1">
+        <b-col class="px-1" md="3" order="1">
           <!-- Right column -->
             <b-alert show variant="dark">
               <div class="text-xs-center fs-25">
@@ -555,11 +554,11 @@
             </b-alert>
             <template>
               <div role="tablist">
-                <b-card no-body class="mb-1 text-center">
+                <b-card no-body class="mb-1 text-center fs-16">
                   <b-card-header header-tag="header" class="p-1" role="tab">
                     <div v-b-toggle.accordion1>Понедельник</div>
                   </b-card-header>
-                  <b-collapse id="accordion1" visible accordion="my-accordion" role="tabpanel">
+                  <b-collapse id="accordion1" v-model="showCollapse1" accordion="my-accordion" role="tabpanel">
                     <b-card-body>
                       <a href="#">Повар небесной гостиницы / Kakuriyo no Yadomeshi</a>
                       <hr>
@@ -567,11 +566,11 @@
                     </b-card-body>
                   </b-collapse>
                 </b-card>
-                <b-card no-body class="mb-1 text-center">
+                <b-card no-body class="mb-1 text-center fs-16">
                   <b-card-header header-tag="header" class="p-1" role="tab">
                     <div v-b-toggle.accordion2>Вторник</div>
                   </b-card-header>
-                  <b-collapse id="accordion2" accordion="my-accordion" role="tabpanel">
+                  <b-collapse id="accordion2" v-model="showCollapse2" accordion="my-accordion" role="tabpanel">
                     <b-card-body>
                       <a href="#">Повар небесной гостиницы / Kakuriyo no Yadomeshi</a>
                       <hr>
@@ -579,11 +578,11 @@
                     </b-card-body>
                   </b-collapse>
                 </b-card>
-                <b-card no-body class="mb-1 text-center">
+                <b-card no-body class="mb-1 text-center fs-16">
                   <b-card-header header-tag="header" class="p-1" role="tab">
                     <div v-b-toggle.accordion3>Среда</div>
                   </b-card-header>
-                  <b-collapse id="accordion3" accordion="my-accordion" role="tabpanel">
+                  <b-collapse id="accordion3" v-model="showCollapse3" accordion="my-accordion" role="tabpanel">
                     <b-card-body>
                       <a href="#">Повар небесной гостиницы / Kakuriyo no Yadomeshi</a>
                       <hr>
@@ -591,11 +590,11 @@
                     </b-card-body>
                   </b-collapse>
                 </b-card>
-                <b-card no-body class="mb-1 text-center">
+                <b-card no-body class="mb-1 text-center fs-16">
                   <b-card-header header-tag="header" class="p-1" role="tab">
                     <div v-b-toggle.accordion4>Четверг</div>
                   </b-card-header>
-                  <b-collapse id="accordion4" accordion="my-accordion" role="tabpanel">
+                  <b-collapse id="accordion4" v-model="showCollapse4" accordion="my-accordion" role="tabpanel">
                     <b-card-body>
                       <a href="#">Повар небесной гостиницы / Kakuriyo no Yadomeshi</a>
                       <hr>
@@ -603,11 +602,11 @@
                     </b-card-body>
                   </b-collapse>
                 </b-card>
-                <b-card no-body class="mb-1 text-center">
+                <b-card no-body class="mb-1 text-center fs-16">
                   <b-card-header header-tag="header" class="p-1" role="tab">
                     <div v-b-toggle.accordion5>Пятница</div>
                   </b-card-header>
-                  <b-collapse id="accordion5" accordion="my-accordion" role="tabpanel">
+                  <b-collapse id="accordion5" v-model="showCollapse5" accordion="my-accordion" role="tabpanel">
                     <b-card-body>
                       <a href="#">Повар небесной гостиницы / Kakuriyo no Yadomeshi</a>
                       <hr>
@@ -615,11 +614,11 @@
                     </b-card-body>
                   </b-collapse>
                 </b-card>
-                <b-card no-body class="mb-1 text-center">
+                <b-card no-body class="mb-1 text-center fs-16">
                   <b-card-header header-tag="header" class="p-1" role="tab">
                     <div v-b-toggle.accordion6>Суббота</div>
                   </b-card-header>
-                  <b-collapse id="accordion6" accordion="my-accordion" role="tabpanel">
+                  <b-collapse id="accordion6" v-model="showCollapse6" accordion="my-accordion" role="tabpanel">
                     <b-card-body>
                       <a href="#">Повар небесной гостиницы / Kakuriyo no Yadomeshi</a>
                       <hr>
@@ -627,11 +626,11 @@
                     </b-card-body>
                   </b-collapse>
                 </b-card>
-                <b-card no-body class="mb-1 text-center">
+                <b-card no-body class="mb-1 text-center fs-16">
                   <b-card-header header-tag="header" class="p-1" role="tab">
                     <div v-b-toggle.accordion7>Воскресенье</div>
                   </b-card-header>
-                  <b-collapse id="accordion7" accordion="my-accordion" role="tabpanel">
+                  <b-collapse id="accordion7" v-model="showCollapse7" accordion="my-accordion" role="tabpanel">
                     <b-card-body>
                       <a href="#">Повар небесной гостиницы / Kakuriyo no Yadomeshi</a>
                       <hr>
@@ -639,7 +638,7 @@
                     </b-card-body>
                   </b-collapse>
                 </b-card>
-                <b-card no-body class="mb-1 text-center">
+                <b-card no-body class="mb-1 text-center fs-16">
                   <b-card-header header-tag="header" class="p-1" role="tab">
                     <div v-b-toggle.accordion8>Нестабильные</div>
                   </b-card-header>
@@ -667,16 +666,6 @@
             tile
             class="bg-dark lighten-1 white--text text-xs-center"
           >
-            <v-card-text>
-              <v-btn
-                v-for="icon in icons"
-                :key="icon"
-                icon
-                class="mx-3 white--text"
-              >
-                <v-icon size="24px">{{ icon }}</v-icon>
-              </v-btn>
-            </v-card-text>
             <v-card-text class="white--text pt-0">
               Японская анимация обладает качеством и уникальностью. Все дело в особом менталитете и, конечно же, оригинальной рисовке. Аниме не просто жанр, но и целая культура, которая пробуждает фантазию и освещает те осколки жизни, которые составляют смысл самого становления и существования человека. Двадцать первый век привнес в аниме культуру множество перемен, сохранив атмосферу самой Японии и бытность этого потрясающего народа.
               Возможность просмотра аниме и чтение манги в онлайн режиме стала доступна абсолютно каждому. И данный сайт не является исключением — наш проект, Risens Team, раскрывает вам мастерство японских мангак и погружает в мир приключений, экшена, фентези и фантастики. У нас можно посмотреть аниме с русскими субтитрами и озвучкой онлайн. Смотреть онлайн в хорошем качестве — это наша привелегия, как жителей 21-го века! У нас можно найти аниме, мангу, русские субтитры и русскую озвучку в хорошем качестве! Не упусти свою возможность окунуться в мир японской анимации и комиксов без регистрации прямо сейчас!
@@ -693,17 +682,50 @@
     </b-container>
   </div>
   <script>
+
       window.app = new Vue({
         el: "#app",
         data: {
-          name: ''
+          showCollapse1: false,
+          showCollapse2: false,
+          showCollapse3: false,
+          showCollapse4: false,
+          showCollapse5: false,
+          showCollapse6: false,
+          showCollapse7: false,
         },
         computed: {
-          showAlert() {
-            return this.name.length > 4 ? true : false;
+        },
+        mounted: function () {
+          let d = new Date();
+          let n = d.getDay();
+          switch (n) {
+            case 1:
+              this.showCollapse1 = true;
+              break;
+            case 2:
+              this.showCollapse2 = true;
+              break;
+            case 3:
+              this.showCollapse3 = true;
+              break;
+            case 4:
+              this.showCollapse4 = true;
+              break;
+            case 5:
+              this.showCollapse5 = true;
+              break;
+            case 6:
+              this.showCollapse6 = true;
+              break;
+            case 0:
+              this.showCollapse7 = true;
+              break;
+            default:
+              break;
           }
         }
-      })
+      });
     </script>
     <script type="text/javascript" src="https://vk.com/js/api/openapi.js?121"></script>
   </body>

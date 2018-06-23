@@ -34,6 +34,9 @@ a:hover {
 
 .button-menu {
   margin: 13px 0px;
+  border-radius: 5px;
+  border: solid silver 2px;
+  padding: 2px;
 }
 
 .b-nav-dropdown {
@@ -114,6 +117,14 @@ a:hover {
   font-size: 25px;
 }
 
+.fs-16 {
+  font-size: 16px;
+}
+
 .bg-dark {
   background-color: #343a40 !important;
+}
+
+.btn {
+  min-width: 40px;
 }

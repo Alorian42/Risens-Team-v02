@@ -1,0 +1,397 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Risens Team</title>
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-vue.css"/>
+    <link href='css/css.css' rel="stylesheet">
+    <link href="css/vuetify.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="js/vue.js"></script>
+    <script src="js/vuetify.js"></script>
+    <script src="js/polyfill.min.js"></script>
+    <script src="js/bootstrap-vue.js"></script>
+  </head>
+  <body>
+  <div id="app">
+    <b-container fluid>
+      <b-navbar toggleable="lg" type="dark" variant="info">
+        <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+        <b-navbar-brand href="index.html">
+          <b-img src="img/logo_1.png" alt="Risens Team">
+        </b-navbar-brand>
+        <b-collapse is-nav id="nav_collapse">
+          <b-navbar-nav>
+            <b-nav-item href="category.html">Новости</b-nav-item>
+            <b-nav-item href="category.html">Онгоинги</b-nav-item>
+            <b-nav-item href="category.html">База аниме</b-nav-item>
+            <b-nav-item href="category.html">Манга</b-nav-item>
+            <b-nav-item href="category.html">Новеллы</b-nav-item>
+          </b-navbar-nav>
+          <!-- Right aligned nav items -->
+          <b-navbar-nav class="ml-auto">
+            <b-nav-item class="button-menu btn btn-secondary text-xs-center">
+                <i class="fa fa-moon-o" aria-hidden="true"></i>
+            </b-nav-item>
+            <b-nav-item>
+              <b-nav-form action="search.html">
+                <b-form-input size="sm" class="mr-sm-2 w-100" type="text" placeholder="Поиск"></b-form-input>
+              </b-nav-form>
+            </b-nav-item>
+            <b-dropdown right toggle-class="button-menu">
+              <!-- Using button-content slot -->
+              <template slot="button-content">
+                <i class="fa fa-sign-in"></i>
+              </template>
+              <b-dropdown-item class="avatar"><img src="img/foto_1.gif" alt="Alorian"></b-dropdown-item>
+              <b-dropdown-item href="#">Админпанель</b-dropdown-item>
+              <b-dropdown-item href="#">Мой профиль</b-dropdown-item>
+              <b-dropdown-item href="#">Мои закладки (9)</b-dropdown-item>
+              <b-dropdown-item href="#">Непрочитанное</b-dropdown-item>
+              <b-dropdown-item href="#">Последние комментарии</b-dropdown-item>
+              <b-dropdown-item href="#">Выход</b-dropdown-item>
+            </b-dropdown>
+          </b-navbar-nav>
+        </b-collapse>
+      </b-navbar>
+
+      <b-row no-gutters>
+        <b-col class="px-1">
+          <a href="#">
+            <b-img center fluid src="img/donate_banner_2.jpg">
+          </a>
+          <b-alert show variant="secondary">Собрано 0 из 5000 рублей</b-alert>
+        </b-col>
+      </b-row>
+      <b-row no-gutters>
+        <b-col class="px-1 text-xs-center" order="2">
+          <!-- Main block -->
+          <h1>Моя геройская академия 3 сезон / Boku no Hero Academia 3rd Season / My Hero Academia ТВ-3 смотреть онлайн</h1>
+          <b-row class="px-3" no-gutters>
+            <b-col lg="3">
+              <b-img fluid src="img/3mha_new.jpg" alt="My Hero Academia 3">
+            </b-col>
+            <b-col>
+              <template>
+                <b-table small striped :items="animeInfo" thead-class="hidden-header"></b-table>
+              </template>
+            </b-col>
+          </b-row>
+          <div class="px-3 news-body text-xs-justify">
+            Где на обладателя суперспособности не будут смотреть, как на диковинку, а может быть даже попытаются оспорить право называться лучшим из героев? Конечно в Геройской Академии! Да здесь каждый первый — супермен и человек «Х» в одном флаконе. И именно в высшей Геройской Академии «Ю.Эй.» продолжает совершенствовать свою уникальную способность забавный паренек Мидория Изуку. В стенах учебного заведения все по-прежнему: уроки и тесты, соревнования и фестивали, вот только вездесущее зло не дает сосредоточиться на учебе!<br><br>Разбежавшиеся члены Лиги Злодеев вовсе не капитулировали перед наследником сильнейшего в мире героя и обладателем суперспособности «Один за всех». Во главе новой не такой большой, но еще более сильной организации — владелец способности «Все за одного». Этот тип — та еще заноза, ведь он может с легкостью «пересаживать» одну, а то и несколько способностей сразу даже тем, у кого их никогда не было. И наш зеленоголовый герой ему, как кость в горле. Но не ему одному надоело терпеть геройские замашки импульсивных подростков! В общем, времени на домашние задания у парня совсем не осталось.<br><br>Борясь со злом, неунывающий Изуку учится отличать зависть от соперничества, побеждать врагов и друзей и напролом идти к своей главной цели. А цель у парня благородная: стать самым сильным героем не только в Академии, но и во всем мире. Кто поможет ему в этом, а кто станет серьезным препятствием?
+          </div>
+          <div class="mx-3 px-3 news-header text-xs-justify">
+            Смотреть в порядке:
+          </div>
+          <div class="px-4 news-body text-xs-justify">
+            1. Моя геройская академия / Boku no Hero Academia<br>2. Моя геройская академия Jump Festival OVA / Boku no Hero Academia OVA 01 / My Hero Academia ОВА 1<br>3. Моя геройская академия 2 сезон / Boku no Hero Academia 2nd Season / My Hero Academia ТВ-2<br>4. Моя геройская академия 3 сезон / Boku no Hero Academia 3rd Season / My Hero Academia ТВ-3
+          </div>
+          <h2 class="px-3 text-xs-justify">Моя геройская академия 3 сезон / Boku no Hero Academia 3rd Season / My Hero Academia ТВ-3 с русскими субтитрами и русской озвучкой</h2>
+          <div class="px-3 text-xs-center">
+            <b-embed type="iframe"
+                     aspect="16by9"
+                     src="https://risensteam.ru/getnewanime.php?id=313"
+                     allowfullscreen
+                     allow="encrypted-media"
+            ></b-embed>
+          </div>
+          <br>
+          <div class="mx-3 px-3 news-header text-xs-justify">Для корректного отображения субтитров на iOS-устройствах, откройте плеер в новой вкладке по <a href="https://risensteam.ru/getnewanime.php?id=313" target="_blank">этой ссылке</a>.</div>
+          <hr class="px-3 mx-3">
+          <div class="mx-3 px-3 news-header text-xs-justify"><a href="#">Поддержать проект</a></div>
+          <iframe style="width: 100%; border:none; overflow:hidden;" src="https://money.yandex.ru/embed/donate.xml?account=410014527543142&quickpay=donate&payment-type-choice=on&mobile-payment-type-choice=on&default-sum=50&targets=%D0%9D%D0%B0%D0%BF%D0%B8%D1%88%D0%B8+%D0%BD%D0%B8%D0%B6%D0%B5+%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+%D0%B0%D0%BD%D0%B8%D0%BC%D0%B5+%D0%B8+%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B8+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82!%3D)&target-visibility=on&project-name=Risens+Team&project-site=http%3A%2F%2Frisens.team&button-text=05&comment=on&hint=%D0%A3%D0%BA%D0%B0%D0%B6%D0%B8+%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+%D0%B0%D0%BD%D0%B8%D0%BC%D0%B5&successURL=risens.team"
+          height="187"
+          class="px-3"></iframe>
+          <hr class="px-3 mx-3">
+          <h2 class="px-3 text-xs-justify">Моя геройская академия 3 сезон / Boku no Hero Academia 3rd Season / My Hero Academia ТВ-3 когда следующая серия?</h2>
+          <div class="mx-3 px-3 news-header text-xs-justify">Рекомендуем посмотреть:</div>
+          <b-card-group deck class="justify-content-center">
+            <b-card
+                    style="min-width:10rem;; max-width:15rem;"
+                    no-body
+                    class="mb-2">
+              <b-link to="#">
+                <b-card-img
+                          src="img/3mha_new.jpg"
+                          alt="My Hero Academia 3"
+                          top><b-card-img>
+              </b-link>
+            </b-card>
+            <b-card
+                    style="min-width:10rem;; max-width:15rem;"
+                    no-body
+                    class="mb-2">
+              <b-link to="#">
+                <b-card-img
+                          src="img/3mha_new.jpg"
+                          alt="My Hero Academia 3"
+                          top><b-card-img>
+              </b-link>
+            </b-card>
+            <b-card
+                    style="min-width:10rem;; max-width:15rem;"
+                    no-body
+                    class="mb-2">
+              <b-link to="#">
+                <b-card-img
+                          src="img/3mha_new.jpg"
+                          alt="My Hero Academia 3"
+                          top><b-card-img>
+              </b-link>
+            </b-card>
+            <b-card
+                    style="min-width:10rem;; max-width:15rem;"
+                    no-body
+                    class="mb-2">
+              <b-link to="#">
+                <b-card-img
+                          src="img/3mha_new.jpg"
+                          alt="My Hero Academia 3"
+                          top><b-card-img>
+              </b-link>
+            </b-card>
+            <b-card
+                    style="min-width:10rem;; max-width:15rem;"
+                    no-body
+                    class="mb-2">
+              <b-link to="#">
+                <b-card-img
+                          src="img/3mha_new.jpg"
+                          alt="My Hero Academia 3"
+                          top><b-card-img>
+              </b-link>
+            </b-card>
+          </b-card-group>
+          <hr class="px-3 mx-3">
+          <div class="mx-3 px-3 news-header text-xs-justify">Коментарии к</div>
+          <h2 class="px-3 text-xs-justify">Моя геройская академия 3 сезон / Boku no Hero Academia 3rd Season / My Hero Academia ТВ-3 все серии</h2>
+          <b-card no-body>
+            <b-tabs card  pills>
+              <b-tab title="Комментарии на сайте" active class="color-black">
+                Tab Contents 1
+              </b-tab>
+              <b-tab title="Комментарии VK" class="color-black">
+                Tab Contents 2
+              </b-tab>
+            </b-tabs>
+          </b-card>
+        </b-col>
+        <b-col class="px-1" md="3" order="1">
+          <!-- Right column -->
+            <b-alert show variant="dark">
+              <div class="text-xs-center fs-25">
+                <a href="#">Новости</a>
+              </div>
+            </b-alert>
+            <b-row class="text-xs-center news-row">
+              <b-col class="news-item" cols="12">
+                <a href="#">Насколько всё плохо у Beatless и когда ждать следующую серию</a>
+              </b-col>
+              <b-col class="news-item" cols="12">
+                <a href="#">Сказочная девочка «отдыхает» до 22 марта</a>
+              </b-col>
+              <b-col class="news-item" cols="12">
+                <a href="#">Токийский Гуль возвращается: амнезия и смена декораций</a>
+              </b-col>
+            </b-row>
+            <b-alert show variant="dark">
+            <div class="text-xs-center fs-25">
+              <a href="#">Расписание</a>
+            </div>
+            </b-alert>
+            <template>
+              <div role="tablist">
+                <b-card no-body class="mb-1 text-center fs-16">
+                  <b-card-header header-tag="header" class="p-1" role="tab">
+                    <div v-b-toggle.accordion1>Понедельник</div>
+                  </b-card-header>
+                  <b-collapse id="accordion1" v-model="showCollapse1" accordion="my-accordion" role="tabpanel">
+                    <b-card-body>
+                      <a href="#">Повар небесной гостиницы / Kakuriyo no Yadomeshi</a>
+                      <hr>
+                      <a href="#">Легенда о героях Галактики (2018) / Ginga Eiyuu Densetsu: Die Neue These - Kaikou</a>
+                    </b-card-body>
+                  </b-collapse>
+                </b-card>
+                <b-card no-body class="mb-1 text-center fs-16">
+                  <b-card-header header-tag="header" class="p-1" role="tab">
+                    <div v-b-toggle.accordion2>Вторник</div>
+                  </b-card-header>
+                  <b-collapse id="accordion2" v-model="showCollapse2" accordion="my-accordion" role="tabpanel">
+                    <b-card-body>
+                      <a href="#">Повар небесной гостиницы / Kakuriyo no Yadomeshi</a>
+                      <hr>
+                      <a href="#">Легенда о героях Галактики (2018) / Ginga Eiyuu Densetsu: Die Neue These - Kaikou</a>
+                    </b-card-body>
+                  </b-collapse>
+                </b-card>
+                <b-card no-body class="mb-1 text-center fs-16">
+                  <b-card-header header-tag="header" class="p-1" role="tab">
+                    <div v-b-toggle.accordion3>Среда</div>
+                  </b-card-header>
+                  <b-collapse id="accordion3" v-model="showCollapse3" accordion="my-accordion" role="tabpanel">
+                    <b-card-body>
+                      <a href="#">Повар небесной гостиницы / Kakuriyo no Yadomeshi</a>
+                      <hr>
+                      <a href="#">Легенда о героях Галактики (2018) / Ginga Eiyuu Densetsu: Die Neue These - Kaikou</a>
+                    </b-card-body>
+                  </b-collapse>
+                </b-card>
+                <b-card no-body class="mb-1 text-center fs-16">
+                  <b-card-header header-tag="header" class="p-1" role="tab">
+                    <div v-b-toggle.accordion4>Четверг</div>
+                  </b-card-header>
+                  <b-collapse id="accordion4" v-model="showCollapse4" accordion="my-accordion" role="tabpanel">
+                    <b-card-body>
+                      <a href="#">Повар небесной гостиницы / Kakuriyo no Yadomeshi</a>
+                      <hr>
+                      <a href="#">Легенда о героях Галактики (2018) / Ginga Eiyuu Densetsu: Die Neue These - Kaikou</a>
+                    </b-card-body>
+                  </b-collapse>
+                </b-card>
+                <b-card no-body class="mb-1 text-center fs-16">
+                  <b-card-header header-tag="header" class="p-1" role="tab">
+                    <div v-b-toggle.accordion5>Пятница</div>
+                  </b-card-header>
+                  <b-collapse id="accordion5" v-model="showCollapse5" accordion="my-accordion" role="tabpanel">
+                    <b-card-body>
+                      <a href="#">Повар небесной гостиницы / Kakuriyo no Yadomeshi</a>
+                      <hr>
+                      <a href="#">Легенда о героях Галактики (2018) / Ginga Eiyuu Densetsu: Die Neue These - Kaikou</a>
+                    </b-card-body>
+                  </b-collapse>
+                </b-card>
+                <b-card no-body class="mb-1 text-center fs-16">
+                  <b-card-header header-tag="header" class="p-1" role="tab">
+                    <div v-b-toggle.accordion6>Суббота</div>
+                  </b-card-header>
+                  <b-collapse id="accordion6" v-model="showCollapse6" accordion="my-accordion" role="tabpanel">
+                    <b-card-body>
+                      <a href="#">Повар небесной гостиницы / Kakuriyo no Yadomeshi</a>
+                      <hr>
+                      <a href="#">Легенда о героях Галактики (2018) / Ginga Eiyuu Densetsu: Die Neue These - Kaikou</a>
+                    </b-card-body>
+                  </b-collapse>
+                </b-card>
+                <b-card no-body class="mb-1 text-center fs-16">
+                  <b-card-header header-tag="header" class="p-1" role="tab">
+                    <div v-b-toggle.accordion7>Воскресенье</div>
+                  </b-card-header>
+                  <b-collapse id="accordion7" v-model="showCollapse7" accordion="my-accordion" role="tabpanel">
+                    <b-card-body>
+                      <a href="#">Повар небесной гостиницы / Kakuriyo no Yadomeshi</a>
+                      <hr>
+                      <a href="#">Легенда о героях Галактики (2018) / Ginga Eiyuu Densetsu: Die Neue These - Kaikou</a>
+                    </b-card-body>
+                  </b-collapse>
+                </b-card>
+                <b-card no-body class="mb-1 text-center fs-16">
+                  <b-card-header header-tag="header" class="p-1" role="tab">
+                    <div v-b-toggle.accordion8>Нестабильные</div>
+                  </b-card-header>
+                  <b-collapse id="accordion8" accordion="my-accordion" role="tabpanel">
+                    <b-card-body>
+                      <a href="#">Повар небесной гостиницы / Kakuriyo no Yadomeshi</a>
+                      <hr>
+                      <a href="#">Легенда о героях Галактики (2018) / Ginga Eiyuu Densetsu: Die Neue These - Kaikou</a>
+                    </b-card-body>
+                  </b-collapse>
+                </b-card>
+              </div>
+            </template>
+            <div id="vk_groups"></div>
+            <script type="text/javascript">
+              window.onload = function() {  VK.Widgets.Group("vk_groups", {mode: 4, width: "auto", height: "400"}, 117869331); };
+            </script>
+            <h1 class="right-bar-h1 text-xs-center">Смотреть онлайн аниме в HD (720 и 1080) с русскими субтитрами и русской озвучкой, а также читать мангу в русском переводе</h1>
+        </b-col>
+      </b-row>
+      <template>
+        <v-footer height="auto">
+          <v-card
+            flat
+            tile
+            class="bg-dark lighten-1 white--text text-xs-center"
+          >
+            <v-card-text class="white--text pt-0">
+              Японская анимация обладает качеством и уникальностью. Все дело в особом менталитете и, конечно же, оригинальной рисовке. Аниме не просто жанр, но и целая культура, которая пробуждает фантазию и освещает те осколки жизни, которые составляют смысл самого становления и существования человека. Двадцать первый век привнес в аниме культуру множество перемен, сохранив атмосферу самой Японии и бытность этого потрясающего народа.
+              Возможность просмотра аниме и чтение манги в онлайн режиме стала доступна абсолютно каждому. И данный сайт не является исключением — наш проект, Risens Team, раскрывает вам мастерство японских мангак и погружает в мир приключений, экшена, фентези и фантастики. У нас можно посмотреть аниме с русскими субтитрами и озвучкой онлайн. Смотреть онлайн в хорошем качестве — это наша привелегия, как жителей 21-го века! У нас можно найти аниме, мангу, русские субтитры и русскую озвучку в хорошем качестве! Не упусти свою возможность окунуться в мир японской анимации и комиксов без регистрации прямо сейчас!
+              <br><strong>Risens Team</strong> — с горячим сердцем на ваши экраны!
+            </v-card-text>
+            <hr>
+            <v-card-text class="white--text">
+              2016-2018 © Risens Team, Все права защищены.<br>
+              <a href="/about.html">О команде</a> <a href="/abuse.html">Правообладателям</a
+            </v-card-text>
+          </v-card>
+        </v-footer>
+      </template>
+    </b-container>
+  </div>
+  <script>
+
+      window.app = new Vue({
+        el: "#app",
+        data: {
+          showCollapse1: false,
+          showCollapse2: false,
+          showCollapse3: false,
+          showCollapse4: false,
+          showCollapse5: false,
+          showCollapse6: false,
+          showCollapse7: false,
+          animeInfo: [
+            { key: 'Год:', value: '2018', },
+            { key: 'Тип:', value: 'ТВ (>12 эп.), 25 мин.', },
+            { key: 'Жанр:', value: 'Экшен / Школа / Сёнэн / Сверхспособности / Комедия / Суббота / Аниме / Онгоинги', },
+            { key: 'Рейтинг:', value: '9.6 / 10', },
+            { key: 'Возрастной рейтинг:', value: 'PG-13', },
+            { key: 'Перевод:', value: 'Alorian, MeLarie', },
+            { key: 'Озвучка:', value: 'IIIaurma & Marie Bibika', },
+            { key: 'Состояни:е', value: 'Выход продолжается', },
+            { key: 'Статус:', value: '	Добавлена 12 серия с русской озвучкой и субтитрами', },
+            { key: 'Обновлено:', value: '23-06-2018 19:42', },
+          ]
+        },
+        computed: {
+        },
+        mounted: function () {
+          let d = new Date();
+          let n = d.getDay();
+          switch (n) {
+            case 1:
+              this.showCollapse1 = true;
+              break;
+            case 2:
+              this.showCollapse2 = true;
+              break;
+            case 3:
+              this.showCollapse3 = true;
+              break;
+            case 4:
+              this.showCollapse4 = true;
+              break;
+            case 5:
+              this.showCollapse5 = true;
+              break;
+            case 6:
+              this.showCollapse6 = true;
+              break;
+            case 0:
+              this.showCollapse7 = true;
+              break;
+            default:
+              break;
+          }
+        }
+      });
+    </script>
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?121"></script>
+  </body>
+
+</html>
